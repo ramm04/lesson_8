@@ -72,8 +72,8 @@ body {
 .btn-reset {
     padding: 0;
     border: none;
-    background-color:transparent;
-    cursor:pointer;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /* Дополнительный класс */
@@ -108,7 +108,8 @@ body {
     padding-bottom: 160px;
 }
 
-/* header */
+/* Header */
+
 .header {
     padding: 36px 0;
     border-bottom: 1px solid #c4c4c4;
@@ -117,7 +118,7 @@ body {
 
 .header-link {
     font-weight: 600;
-    color:#1C1C1C;
+    color: #1C1C1C;
     font-size: 15px;
 }
 
@@ -134,7 +135,7 @@ body {
 }
 
 .header-list-item:not(:last-child) {
-margin-right: 52px;
+    margin-right: 52px;
 }
 
 .btn {
@@ -147,7 +148,8 @@ margin-right: 52px;
     border-radius: 3px;
 }
 
-/* .hero */
+/* .Hero */
+
 .hero {
     padding-top: 100px;
     padding-bottom: 150px;
@@ -176,7 +178,7 @@ margin-right: 52px;
     margin-bottom: 34px;
     font-size: 16px;
     line-height: 155%;
-    color:#787878;
+    color: #787878;
 }
 
 .hero-wrapper {
@@ -205,7 +207,8 @@ margin-right: 52px;
     padding-left: 30px;
 }
 
-/* services */
+/* Services */
+
 .services {
     border-bottom: 1px solid #E4E4E4;
 }
@@ -215,7 +218,7 @@ margin-right: 52px;
 }
 
 .services-descr {
-    text-align: center; 
+    text-align: center;
 }
 
 .services-item {
@@ -255,6 +258,11 @@ margin-right: 52px;
 }
 
 /* Articles */
+
+.articles {
+    border-bottom: 1px solid #DADADA;
+}
+
 .articles-list {
     flex-wrap: wrap;
 }
@@ -262,11 +270,17 @@ margin-right: 52px;
 .articles-item {
     width: 570px;
     margin-bottom: 30px;
-    outline: 1px solid coral;
 }
 
 .articles-item:not(:nth-child(2n)) {
     margin-right: 30px;
+}
+
+.blog-preview {
+    /* ДЛЯ ОБРЕЗАНИЯ КАРТИНОК БОРДЕРОМ */
+    overflow: hidden;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
 }
 
 /* Новое!!! Для картинок */
@@ -274,32 +288,46 @@ margin-right: 52px;
     object-fit: cover;
 }
 
-.blog-preview-text{
+.blog-preview-text {
     padding: 30px;
 }
 
 .blog-preview-time {
     display: block;
     margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 150%;
+    color: #787878;
 }
 
 .blog-preview-title {
     margin: 0;
     margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1C1C1C;
 }
 
 .blog-preview-descr {
     margin: 0;
-    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787878;
+    min-width: 210px;
 }
 
 /* clients */
+
+.clients {
+    border-bottom: 1px solid #DADADA;
+}
+
 .clients-item {
     flex-direction: column;
     width: 370px;
     padding: 50px 36px;
     padding-bottom: 30px;
-    outline: 1px solid coral;
+    border: 1px solid #E4E4E4;
 }
 
 .clients-item:not(:nth-child(3n)) {
@@ -309,25 +337,49 @@ margin-right: 52px;
 .clients-item-descr {
     margin: 0;
     margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 .clients-user {
     margin-top: auto;
     align-items: center;
+    border-top: 1px solid #DADADA;
+    width: 100%;
+    padding-top: 28px;
 }
 
-/* "Flex-shrink: 0;" - чтобы изображение не сжималось */
 .clients-avatar {
+    /* "Flex-shrink: 0;" - чтобы изображение не сжималось */
     flex-shrink: 0;
     width: 67px;
     margin-right: 17px;
 }
+/* Для того чтобы применить стили только для изображения данного дива */
+.clients-avatar img {  
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3172B9;
+    border-radius: 100%;
+}
 
 .clients-name {
     margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1C1C1C;
+}
+
+.clients-post {
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 /* contacts */
+
 .contacts-adress {
     font-style: normal;
 }
@@ -355,6 +407,7 @@ margin-right: 52px;
 }
 
 /* footer */
+
 .footer {
     padding: 42px 0;
 }
